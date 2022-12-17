@@ -31,7 +31,7 @@ class MyTaskDataProcessor(DataProcessor):
     """
 
     # Set this to the name of the task
-    TASK_NAME = "my-task"
+    TASK_NAME = "sexist"
 
     # Set this to the name of the file containing the train examples
     TRAIN_FILE_NAME = "train.csv"
@@ -52,10 +52,10 @@ class MyTaskDataProcessor(DataProcessor):
     TEXT_A_COLUMN = 1
 
     # Set this to the column of the train/test csv files containing the input's text b or to -1 if there is no text b
-    TEXT_B_COLUMN = 2
+    TEXT_B_COLUMN = -1
 
     # Set this to the column of the train/test csv files containing the input's gold label
-    LABEL_COLUMN = 0
+    LABEL_COLUMN = 2
 
     def get_train_examples(self, data_dir: str) -> List[InputExample]:
         """
